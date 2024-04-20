@@ -16,6 +16,7 @@ int Priority(char c) {
     return -1;
 }
 std::string infx2pstfx(std::string inf) {
+  // добавьте код
   std::string post;
   TStack<char, 100> stack1;
   for (char c : inf) {
@@ -53,7 +54,8 @@ std::string infx2pstfx(std::string inf) {
   return post;
 }
 
-int eval(std::string pref) {
+  // добавьте код
+  int eval(std::string post) {
   TStack<int, 100> stack2;
   std::string number;
   for (int i = 0; i < post.size(); ++i) {
@@ -89,4 +91,4 @@ int eval(std::string pref) {
       }
   }
   return stack2.get();
-}
+  }
