@@ -6,7 +6,8 @@
 
 template<typename T, int size>
 class TStack {
-   public:
+  // добавьте код стека
+ public:
   TStack() : top(-1) {
     data = new T[size];
   }
@@ -39,5 +40,4 @@ class TStack {
   T* data;
   int top;
 };
-
 #endif  // INCLUDE_TSTACK_H_
